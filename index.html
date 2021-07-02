@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+    </header>
+
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="#" class="btn">Login</a></li>
+    </ul>
+
+    <section class="banner" id="home">
+        <img src="images/banner.jpg" class="cover">
+        <div class="logoBx">
+            <img src="images/logo.png" alt="">
+        </div>
+    </section>
+
+    <div class="content">
+        <div class="about">
+            <div class="textBx">
+                <h2>About Food & Beverage</h2>
+                <p>Food & Beverage adalah sebuah tempat makan yang memiliki
+                berbagai macam menu makanan dan banyak jenis minuman
+                yang memanjakan lidah para pengunjung</p>
+            </div>
+            <div class="imgBx">
+                <img src="images/list-image.jpg" alt="">
+            </div>
+        </div>
+        <div class="offer">
+            <div class="textBx">
+                <h2>What We Offer</h2>
+                <p>Food & Beverage memiliki penawaran bagus untuk anda yang
+                ingin melakukan reseravasi di tempat kami</p>
+            </div>
+            <div class="menuBx">
+                <div class="lunchBx">
+                    <h2>Lunch</h2>
+                </div>
+                <div class="dinnerBx">
+                    <h2>Dinner</h2>
+                </div>
+            </div>
+        </div>
+        <div class="reservation">
+            <div class="textBx">
+                <h2>Make Reservation ?</h2>
+                <p>Sangat mudah membuat reservasi di tempat kami, cukup
+                dengan satu klik login dan tentukan tanggal dan jam</p>
+            </div>
+            <a href="#" class="btn">Join</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="textBx">
+            <h2 class="white">More Info ?</h2>
+            <p class="white">(+62) 888 9999 888<br>
+            food_beverage@fnb.com<br>
+            Surabaya, Jawa Timur, Indonesia</p>
+        </div>
+        
+        <ul class="sci">
+            <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+        </ul>
+        
+    </footer>
+    
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
